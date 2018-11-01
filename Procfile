@@ -1,3 +1,1 @@
-git add .
-git commit -m "Procfile"
-git push heroku master
+web: daphne -b 0.0.0.0 -p 8000 config.asgi:application
